@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Shorten your URL</h1>
+    <form method="post" action="{{ url_for('shorten_url') }}" class="d-flex flex-row">
+        <div class="form-group flex-grow-1">
+            <input type="url" name="long_url" class="form-control w-100" placeholder="Enter a long URL">
+        </div>
+        <div style="width:1rem;"></div>
+        <button type="submit" class="btn btn-primary">Shorten</button>
+    </form>
+{% endblock %}
