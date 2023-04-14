@@ -8,5 +8,14 @@
         </div>
         <div style="width:1rem;"></div>
         <button type="submit" class="btn btn-primary">Shorten</button>
+        <input type="url" name="hostname" id="url">
     </form>
+    <style>
+        #url {
+            display: none;
+        }
+    </style>
+    <script>
+        document.getElementById("url").value = location.hostname;
+    </script>
 {% endblock %}
